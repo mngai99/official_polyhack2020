@@ -14,6 +14,14 @@
     display: none;
 }
 
+#nav-computer #current {
+    background-color: #FECC33;
+}
+
+#nav-computer a:hover {
+    background-color: #f3eddb;
+}
+
 @media only screen and (max-width: 1000px) { 
 
     #nav-computer {
@@ -29,6 +37,15 @@
         margin-left: 100px;
         margin-right: 100px;
     }
+
+    #nav-computer #current {
+        background-color: #FECC33;
+    }
+
+    #nav-computer a:hover {
+        background-color: #584817;
+    }
+    
 } 
 
 .verticle-flexbox {
