@@ -162,6 +162,103 @@
     margin-bottom: 5px;
 }
 
+#question-flexbox {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#box1-p {
+    font-size:23px;
+    font-family: "Kumbh Sans";
+    background: #FECC33;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#box2-p {
+    font-size:23px;
+    font-family: "Kumbh Sans";
+    background: #FECC33;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#box3-p {
+    font-size:23px;
+    font-family: "Kumbh Sans";
+    background: #FECC33;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#box4-p {
+    font-size:23px;
+    font-family: "Kumbh Sans";
+    background: #FECC33;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#box5-p {
+    font-size:23px;
+    font-family: "Kumbh Sans";
+    background: #FECC33;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#box6-p {
+    font-size:23px;
+    font-family: "Kumbh Sans";
+    background: #FECC33;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#box1 {
+    width:343px;
+    height: 477px;
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+#box2 {
+    width:343px;
+    height: 362px;
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+#box3 {
+    width:343px;
+    height: 511px;
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+#box4 {
+    width:343px;
+    height: 214px;
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+#box5 {
+    width:343px;
+    height: 548px;
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+#box6 {
+    width:343px;
+    height: 356px;
+    margin-left: 20px;
+    margin-right:20px;
+}
+
 #footer {
     margin-top: 200px;
     text-align: center;
