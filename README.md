@@ -1,6 +1,6 @@
 # Polyhack website 2020
 
-##Contributors:
+## Contributors:
 * Michael Ngai
 * Rujen Amatya
 * Manish Aryal
