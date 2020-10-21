@@ -6,7 +6,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
         
         <style type="text/css"> 
             
@@ -19,62 +19,16 @@
         </style> 
         
         <title>Polyhack 2020</title>
-        
+        <script src="js/jquery.js"></script> 
+        <script> 
+            $(function(){ $("#header").load("html/header.html"); });
+        </script> 
     </head>
 
 
     <body>
         
-        <header>
-            
-                    
-        <nav id="nav-computer">
- 
-            <a href="index.html">About</a>
-            <a href="#">Register</a>
-            <a id="current" href="q&a.html">Q&A</a>
-
-            
-            <div id="logo"><img src="logo.png" alt="logo"></div>
-            
-    
-            <a href="mentor.html">Mentor</a>
-            <a href="#">Sponsor</a>
-            <a href="contact.html">Contact</a>
-      
-        </nav>
-            
-        <nav id="nav-mobile">
-            
-            <div>
-                <div id="logo"><img src="logo.png" alt="logo"></div>
-                
-                <table>
-                    <tr>
-                        <td>
-                            <div class="verticle-flexbox">
-                                <a id="current" href="index.html">About</a>
-                                <a href="#">Register</a>
-                                <a href="q&a.html">Q&A</a>
-                            </div>
-                        </td>
-                            
-                        <td>
-                            <div class="verticle-flexbox">
-                                <a href="mentor.html">Mentor</a>
-                                <a href="#">Sponsor</a>
-                                <a href="contact.html">Contact</a>
-                            </div>
-                        </td>
-                    </tr>
-                    
-                </table>
-                
-            </div>
-                
-        </nav>
-            
-            
+        <header id="header">
         </header>
         
         <div id="question-flexbox">
@@ -90,7 +44,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="q&a_image.png" alt="decoration image" style="margin-top: -75px; width: 290px;">
+                            <img src="images/q&a_image.png" alt="decoration image" style="margin-top: -75px; width: 290px;">
                         </td>
                     </tr>
                 </table>
@@ -150,7 +104,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <img src="q&a_image.png" alt="decoration image" style="width: 55%; display: block; margin-left: auto; margin-right: auto; margin-top: -30px;">
+                        <img src="images/q&a_image.png" alt="decoration image" style="width: 55%; display: block; margin-left: auto; margin-right: auto; margin-top: -30px;">
                     </td>
                 </tr>
             </table>
