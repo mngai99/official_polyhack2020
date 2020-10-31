@@ -1,3 +1,5 @@
+
+
 <nav id="nav-computer">
  
     <a id="current" href="/">About</a>
@@ -5,7 +7,7 @@
     <a href="qna">Q&A</a>
 
     
-    <div id="logo"><img src="images/logo.png" alt="logo"></div>
+    <div id="computer-logo"><img src="images/logo.png" alt="logo"></div>
     
 
     <a href="mentor">Mentor</a>
@@ -16,32 +18,31 @@
     
 <nav id="nav-mobile">
     
-    <div>
-        <div id="logo"><img src="images/logo.png" alt="logo"></div>
+        <div id="nav-logo"><img src="images/logo.png" alt="logo"></div>
         
-        <table>
-            <tr>
-                <td>
-                    <div class="verticle-flexbox">
-                        <a id="current" href="/">About</a>
-                        <a href="#">Register</a>
-                        <a href="qna">Q&A</a>
-                    </div>
-                </td>
-                    
-                <td>
-                    <div class="verticle-flexbox">
-                        <a href="mentor">Mentor</a>
-                        <a href="#">Sponsor</a>
-                        <a href="contact">Contact</a>
-                    </div>
-                </td>
-            </tr>
-            
-        </table>
-        
-        
-    </div>
+        <div style="position: absolute; margin-left: 75%;"><img id="phone-button" src="images/phone-button.png" alt="nav button"></div>
+
         
 </nav>
+
+<div id="mobile-nav-links" style="display: none" class="verticle-flexbox">
+    <a style="font-size: 30px;" id="current" href="/"><b>About</b></a>
+    <a style="font-size: 30px;" href="#"><b>Register</b></a>
+    <a style="font-size: 30px;" href="qna"><b>Q&A</b></a>
+    <a style="font-size: 30px;" href="mentor"><b>Mentor</b></a>
+    <a style="font-size: 30px;" href="#"><b>Sponsor</b></a>
+    <a style="font-size: 30px;" href="contact"><b>Contact</b></a>
+</div>
     
+<script language="javascript">
+
+    document.getElementById("phone-button").onclick = function() {
+
+        var links = document.getElementById("mobile-nav-links");
+        if (links.style.display == "none") {
+            links.style.display = "flex";
+        } else {
+            links.style.display = "none";
+        }   
+    };
+</script>
