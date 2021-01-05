@@ -41,6 +41,8 @@
         var links = document.getElementById("mobile-nav-links");
         if (links.style.display == "none") {
             links.style.display = "flex";
+            links.style.align-items = "center";
+            links.style.justify-content = "space-evenly";
             document.getElementById("phone-button").src = "images/clicked-phone-button.png";
         } else {
             links.style.display = "none";
