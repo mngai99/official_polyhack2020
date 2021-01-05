@@ -14,6 +14,12 @@
     display: none;
 }
 
+.nav-mobile-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 #nav-computer #current {
     background-color: #FECC33;
 }
