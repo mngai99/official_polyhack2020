@@ -40,7 +40,7 @@
 
         var links = document.getElementById("mobile-nav-links");
         if (links.style.display == "none") {
-            links.className = "nav-mobile-links";
+            links.classList.add("nav-mobile-links");
             document.getElementById("phone-button").src = "images/clicked-phone-button.png";
         } else {
             links.classList.remove("nav-mobile-links");
