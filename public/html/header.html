@@ -25,13 +25,13 @@
         
 </nav>
 
-<div id="mobile-nav-links" style="display: none" class="verticle-flexbox">
-    <a style="font-size: 30px;" id="current" href="/"><b>About</b></a>
-    <a style="font-size: 30px;" href="#"><b>Register</b></a>
-    <a style="font-size: 30px;" href="qna"><b>Q&A</b></a>
-    <a style="font-size: 30px;" href="mentor"><b>Mentor</b></a>
-    <a style="font-size: 30px;" href="#"><b>Sponsor</b></a>
-    <a style="font-size: 30px;" href="contact"><b>Contact</b></a>
+<div id="mobile-nav-links" style="display: none" class="nav-mobile-links">
+    <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" id="current" href="/"><b>About</b></a>
+    <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" href="#"><b>Register</b></a>
+    <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" href="qna"><b>Q&A</b></a>
+    <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" href="mentor"><b>Mentor</b></a>
+    <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" href="#"><b>Sponsor</b></a>
+    <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" href="contact"><b>Contact</b></a>
 </div>
     
 <script language="javascript">
@@ -40,10 +40,10 @@
 
         var links = document.getElementById("mobile-nav-links");
         if (links.style.display == "none") {
-            links.classList.add("nav-mobile-links");
+            links.style.display = "flex";
             document.getElementById("phone-button").src = "images/clicked-phone-button.png";
         } else {
-            links.classList.remove("nav-mobile-links");
+            links.style.display = "none";
             document.getElementById("phone-button").src = "images/phone-button.png";
         }   
     };

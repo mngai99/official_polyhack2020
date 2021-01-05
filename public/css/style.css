@@ -16,8 +16,10 @@
 
 .nav-mobile-links {
     display: flex;
+    margin-top: 50px;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 #nav-computer #current {
