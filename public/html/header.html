@@ -41,8 +41,10 @@
         var links = document.getElementById("mobile-nav-links");
         if (links.style.display == "none") {
             links.style.display = "flex";
+            document.getElementById("phone-button").src = "images/clicked-phone-button.png";
         } else {
             links.style.display = "none";
+            document.getElementById("phone-button").src = "images/phone-button.png";
         }   
     };
 </script>
