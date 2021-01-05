@@ -34,17 +34,23 @@
     <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" href="contact"><b>Contact</b></a>
 </div>
     
-<script language="javascript">
 
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+<script language="javascript">
+    
     document.getElementById("phone-button").onclick = function() {
 
         var links = document.getElementById("mobile-nav-links");
         if (links.style.display == "none") {
-            links.style.display = "flex";
+            $("#mobile-nav-links").slideDown("slow");
             document.getElementById("phone-button").src = "images/clicked-phone-button.png";
         } else {
-            links.style.display = "none";
+            $("#mobile-nav-links").slideUp("slow");
             document.getElementById("phone-button").src = "images/phone-button.png";
         }   
     };
+    
+    
+    
 </script>
