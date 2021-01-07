@@ -2,7 +2,7 @@
 
 <nav id="nav-computer">
  
-    <a id="current" href="/">About</a>
+    <a href="/">About</a>
     <a href="#">Register</a>
     <a href="qna">Q&A</a>
 
@@ -22,11 +22,10 @@
         
         <div style="position: absolute; margin-left: 75%;"><img id="phone-button" src="images/phone-button.png" alt="nav button"></div>
 
-        
 </nav>
 
 <div id="mobile-nav-links" style="display: none" class="nav-mobile-links">
-    <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" id="current" href="/"><b>About</b></a>
+    <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" href="/"><b>About</b></a>
     <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" href="#"><b>Register</b></a>
     <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" href="qna"><b>Q&A</b></a>
     <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" href="mentor"><b>Mentor</b></a>
@@ -51,6 +50,19 @@
         }   
     };
     
+    $("[href]").click(function() {
+          $("#mobile-nav-links").fadeOut();
+    })
     
+    $(document).ready(function() {
+	    var pathname = window.location.pathname;
+        
+        if (pathname == "/") {
+            $("a[href = '" + pathname + "']").attr('id', 'current');
+        } else {
+            pathname = pathname.substring(1);
+            $("a[href = '" + pathname + "']").attr('id', 'current');
+        }
+    })
     
 </script>
