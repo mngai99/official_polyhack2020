@@ -24,7 +24,7 @@
 
 </nav>
 
-<div id="mobile-nav-links" style="display: none" class="nav-mobile-links">
+<div id="mobile-nav-links" style="display: none;" class="nav-mobile-links">
     <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" href="/"><b>About</b></a>
     <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" href="#"><b>Register</b></a>
     <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" href="qna"><b>Q&A</b></a>
@@ -50,19 +50,17 @@
         }   
     };
     
-    $("[href]").click(function() {
-          $("#mobile-nav-links").fadeOut();
-    })
-    
     $(document).ready(function() {
-	    var pathname = window.location.pathname;
         
+        //highlighting the proper nav bar link
+	    var pathname = window.location.pathname;
         if (pathname == "/") {
-            $("a[href = '" + pathname + "']").attr('id', 'current');
+            $("a[href = '" + pathname + "']").attr('class', 'current');
         } else {
             pathname = pathname.substring(1);
-            $("a[href = '" + pathname + "']").attr('id', 'current');
+            $("a[href = '" + pathname + "']").attr('class', 'current');
         }
+          
     })
     
 </script>
