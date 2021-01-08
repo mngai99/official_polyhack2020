@@ -40,7 +40,7 @@
     
     //ensures that dropdown menu disappears if window is enlarged while the dropdown menu is visible
     $(window).resize(function () {
-        if (window.matchMedia("(max-width: 1000px)").matches) {
+        if (window.matchMedia("(min-width: 1000px)").matches) {
             $("#mobile-nav-links").slideUp("slow");
             document.getElementById("phone-button").src = "images/phone-button.png";
         }
@@ -59,6 +59,12 @@
     };
     
     $(document).ready(function() {
+        
+        $("#computer-logo").hide();
+        $("#computer-logo").slideDown('slow');
+        
+        $("[href]").hide();
+        $("[href]").slideDown("slow");
         
         //highlighting the proper nav bar link
 	    var pathname = window.location.pathname;
