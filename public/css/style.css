@@ -1,3 +1,6 @@
+a {
+        padding: 5px;
+}
 
 #nav-computer {
     display:flex; 
@@ -23,11 +26,13 @@
 
 .current {
     background-color: #FECC33;
+    border-radius: 5px;
 }
 
 
 #nav-computer a:hover {
     background-color: #f3eddb;
+    border-radius: 5px;
 }
 
 @media only screen and (max-width: 1000px) { 
