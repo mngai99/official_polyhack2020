@@ -173,6 +173,10 @@ a {
     margin: 15px;
 }
 
+.profile-picture {
+    width: 200px;
+}
+
 .name {
     font-size: 40px;
 }
