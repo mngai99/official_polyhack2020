@@ -45,41 +45,55 @@
         
         </div>
         
-        <div id="profile-flexbox" style="margin-top: -50px; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center">
-            <div class="profile-picture-flexbox">
-                <image class="profile-picture" src="images/cole.png"></image>
-                <div class="name">Cole Wolk</div>
-                <div class="title">Committee Organizer and Sponsorship Chair</div>
+        <div id="profile-flexbox" style="margin-right: 100px; margin-top: -50px; display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center">
+            <div class="unit" style="position: relative;">
+                <div class="profile-picture-flexbox">
+                    <image class="profile-picture" src="images/cole.png"></image>
+                    <div class="name">Cole Wolk</div>
+                    <div class="title">Committee Organizer and Sponsorship Chair</div>
+                </div>
             </div>
-            <div class="profile-picture-flexbox">
-                <image class="profile-picture" src="images/an.png"></image>
-                <div class="name">An Ho</div>
-                <div class="title">Design Co-chair</div>
+            <div class="unit" style="position: relative;">
+                <div class="profile-picture-flexbox">
+                    <image class="profile-picture" src="images/an.png"></image>
+                    <div class="name">An Ho</div>
+                    <div class="title">Design Co-chair</div>
+                </div>
             </div>
-            <div class="profile-picture-flexbox">
-                <image class="profile-picture" src="images/denzel.png"></image>
-                <div class="name">Denzel Oduro</div>
-                <div class="title">Design Co-chair</div>
+            <div class="unit" style="position: relative;">
+                <div class="profile-picture-flexbox">
+                    <image class="profile-picture" src="images/denzel.png"></image>
+                    <div class="name">Denzel Oduro</div>
+                    <div class="title">Design Co-chair</div>
+                </div>
             </div>
-            <div class="profile-picture-flexbox">
-                <image class="profile-picture" src="images/rujen.png"></image>
-                <div class="name">Rujen Amatya</div>
-                <div class="title">Full Stack Web Developer</div>
+            <div class="unit" style="position: relative;">
+                <div class="profile-picture-flexbox">
+                    <image class="profile-picture" src="images/rujen.png"></image>
+                    <div class="name">Rujen Amatya</div>
+                    <div class="title">Full Stack Web Developer</div>
+                </div>
             </div>
-           <div class="profile-picture-flexbox">
-                <image class="profile-picture" src="images/michael.png"></image>
-                <div class="name">Michael Ngai</div>
-                <div class="title">Full Stack Web Developer</div>
+            <div class="unit" style="position: relative;">
+                <div class="profile-picture-flexbox">
+                    <image class="profile-picture" src="images/michael.png"></image>
+                    <div class="name">Michael Ngai</div>
+                    <div class="title">Full Stack Web Developer</div>
+                </div>
             </div>
-            <div class="profile-picture-flexbox">
-                <image class="profile-picture" src="images/marvin.png"></image>
-                <div class="name">Marvin Agyen</div>
-                <div class="title">Full Stack Web Developer</div>
+            <div class="unit" style="position: relative;">
+                <div class="profile-picture-flexbox">
+                    <image class="profile-picture" src="images/marvin.png"></image>
+                    <div class="name">Marvin Agyen</div>
+                    <div class="title">Full Stack Web Developer</div>
+                </div>
             </div>
-            <div class="profile-picture-flexbox">
-                <image class="profile-picture" src="images/manish.png"></image>
-                <div class="name">Manish Aryal</div>
-                <div class="title">Hackathon Director</div>
+            <div class="unit" style="position: relative;">
+                <div class="profile-picture-flexbox">
+                    <image class="profile-picture" src="images/manish.png"></image>
+                    <div class="name">Manish Aryal</div>
+                    <div class="title">Hackathon Director</div>
+                </div>
             </div>
         </div>
     
@@ -93,15 +107,17 @@
     
     $(document).ready(function() {
         
-        var items = $(".profile-picture-flexbox");
+        //animating the profile pictures
+        var items = $(".unit");
         for (i = 0; i < items.length; i++) {
             $(items[i]).hide();
         }
         
-        var time = 300;
+        var time = 50;
         for (j = 0; j < items.length; j++) {
-            $(items[j]).delay(time).fadeIn(1000);
-            time += 50;
+            $(items[j]).fadeIn({queue: false, duration: 750});
+            $(items[j]).delay(time).animate({left: "50px" }, 'fast')
+            time += 20;
         }
 
     })
