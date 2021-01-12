@@ -160,6 +160,24 @@
     margin-bottom: 50px;
 }
 
+.profile-picture-flexbox {
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: nowrap; 
+    align-items: center;
+    margin: 15px;
+}
+
+.name {
+    font-size: 40px;
+}
+
+.title {
+    width: 300px;
+    text-align: center;
+    font-size:25px;
+}
+
 @media only screen and (max-width: 520px) { 
 
     #contact-flexbox-computer {
