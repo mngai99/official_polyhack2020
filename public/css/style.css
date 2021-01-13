@@ -179,12 +179,14 @@ a {
 
 .name {
     font-size: 40px;
+    font-family: Georgia, serif;
 }
 
 .title {
     width: 300px;
     text-align: center;
-    font-size:25px;
+    font-size:20px;
+    font-family: 'Trebuchet MS', sans-serif;
 }
 
 @media only screen and (max-width: 520px) { 
@@ -229,7 +231,7 @@ a {
 
 #box1-p {
     font-size: 23px;
-    font-family: "Kumbh Sans";
+    font-family: 'Kumbh Sans', sans-serif;
     background: #FECC33;
     border-radius: 10px;
     padding: 15px;
@@ -237,7 +239,7 @@ a {
 
 #box2-p {
     font-size:23px;
-    font-family: "Kumbh Sans";
+    font-family: 'Kumbh Sans', sans-serif;
     background: #FECC33;
     border-radius: 10px;
     padding: 15px;
@@ -245,7 +247,7 @@ a {
 
 #box3-p {
     font-size:23px;
-    font-family: "Kumbh Sans";
+    font-family: 'Kumbh Sans', sans-serif;
     background: #FECC33;
     border-radius: 10px;
     padding: 15px;
@@ -253,7 +255,7 @@ a {
 
 #box4-p {
     font-size:23px;
-    font-family: "Kumbh Sans";
+    font-family: 'Kumbh Sans', sans-serif;
     background: #FFFFFF;
     border-radius: 10px;
     border-color: #FECC33;
@@ -263,7 +265,7 @@ a {
 
 #box5-p {
     font-size:23px;
-    font-family: "Kumbh Sans";
+    font-family: 'Kumbh Sans', sans-serif;
     background: #FECC33;
     border-radius: 10px;
     padding: 15px;
@@ -271,7 +273,7 @@ a {
 
 #box6-p {
     font-size:23px;
-    font-family: "Kumbh Sans";
+    font-family: 'Kumbh Sans', sans-serif;
     background: #FECC33;
     border-radius: 10px;
     padding: 15px;
