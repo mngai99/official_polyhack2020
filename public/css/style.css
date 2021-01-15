@@ -8,6 +8,44 @@ h1 {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size: 
 
 p {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size: 20px; line-height:30px;}
 
+.left-dots {
+    position: absolute;
+    left: 10px;
+    top: 150px;
+    z-index: -10;
+}
+
+.right-dots {
+    position: absolute;
+    right: 10px;
+    top: 150px;
+    z-index: -10;
+}
+
+.right-lines {
+    position: absolute;
+    right: 10px;
+    top: 350px;
+    z-index: -10;
+}
+
+@media only screen and (max-width: 700px) { 
+
+   .left-dots {
+        display: none;
+    }
+
+    .right-dots{
+        display: none;
+    }
+
+    .right-lines {
+        display: none;
+    }
+    
+} 
+
+
 #nav-computer {
     display:flex; 
     flex-wrap: nowrap; 
