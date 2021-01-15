@@ -29,6 +29,13 @@ p {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size: 2
     z-index: -10;
 }
 
+.left-lines {
+    position: absolute;
+    left: 10px;
+    top: 500px;
+    z-index: -10;
+}
+
 @media only screen and (max-width: 700px) { 
 
    .left-dots {
@@ -42,6 +49,11 @@ p {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size: 2
     .right-lines {
         display: none;
     }
+    
+    .left-lines {
+        display: none;
+    }
+    
     
 } 
 
