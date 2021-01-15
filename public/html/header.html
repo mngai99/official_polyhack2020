@@ -31,6 +31,12 @@
     <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" href="#"><b>Sponsor</b></a>
     <a style="font-size: 30px; margin-top: 20px; margin-bottom: 20px" href="contact"><b>Contact</b></a>
 </div>
+
+<div>
+    <img id="left-arrow" src="images/left-arrow.png">
+    <img id="right-arrow" src="images/right-arrow.png">
+</div>
+
     
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
@@ -72,6 +78,20 @@
         } else {
             pathname = pathname.substring(1);
             $("a[href = '" + pathname + "']").attr('class', 'current');
+        }
+        
+        //setting up the left and right arrows
+        var pages = ["/", "qna", "mentor", "contact"];
+        var index = pages.indexOf(pathname);
+        if (pathname == "/") {
+            $("#left-arrow").hide();
+            $("#right-arrow").wrap("<a href='" + pages[index + 1] + "'>");
+        } else if (pathname == "contact") {
+            $("#left-arrow").wrap("<a href='" + pages[index - 1] + "'>");
+            $("#right-arrow").hide();
+        } else {
+            $("#left-arrow").wrap("<a href='" + pages[index - 1] + "'>");
+            $("#right-arrow").wrap("<a href='" + pages[index + 1] + "'>");
         }
           
     })
