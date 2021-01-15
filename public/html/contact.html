@@ -8,16 +8,6 @@
         
         <link rel="stylesheet" href="css/style.css">
         
-        <style type="text/css"> 
-            
-           a {color: #000000; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size: 23px; line-height: 30px; text-decoration:none; margin-top: 5px; margin-bottom: 5px;}
-            
-            h1 {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size: 45px;}
-            
-            p {font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size: 20px; line-height:30px;}
-            
-        </style> 
-        
         <title>Polyhack 2021</title>
         <script src="js/jquery.js"></script> 
         <script> 
@@ -38,9 +28,22 @@
             <image style="margin-top:-50px;" src="images/people-image.png"></image>
         
             <div class="info-flexbox">
-                <p style="margin-bottom: 10px;">polyhack2020@tufts.edu</p>
-                <p style="margin-top: 10px; margin-bottom: 10px;">www.facebook.com/polyhack2020</p>
-                <p style="margin-top: 10px;">www.twitter.com/tufts.polyhack</p>
+                <div>
+                    <img style="display: inline-block; vertical-align: middle" src="images/email-logo.png">
+                    <p style="display: inline-block; vertical-align: middle;">polyhack2020@tufts.edu</p>
+                </div>
+                <a style="color: black" href="www.facebook.com/polyhack2020">
+                    <div id="facebook-div">
+                        <img style="display: inline-block; vertical-align: middle" src="images/facebook-logo.png">
+                        <p style="display: inline-block; vertical-align: middle;">www.facebook.com/polyhack2020</p>
+                    </div>
+                </a>
+                <a style="color: black" href="www.twitter.com/tufts.polyhack">
+                    <div id="twitter-div">
+                        <img style="display: inline-block; vertical-align: middle" src="images/twitter-logo.png">
+                        <p style="display: inline-block; vertical-align: middle;">www.twitter.com/tufts.polyhack</p>
+                    </div>
+                </a>
             </div>
         
         </div>
@@ -119,7 +122,6 @@
             $(items[j]).delay(time).animate({left: "50px" }, 'fast')
             time += 20;
         }
-
     })
     
 </script>
